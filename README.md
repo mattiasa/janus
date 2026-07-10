@@ -2,7 +2,7 @@
 
 A Postfix greylisting policy daemon. Janus defers mail from unknown senders and lets it through once they retry — typical spam bots never do. Senders with an established delivery history get an immediate pass via the auto-whitelist (AWL).
 
-Reimplementation of [Helm](../helm) in modern Python, managed with [uv](https://docs.astral.sh/uv/).
+Reimplementation of [Helm](https://github.com/mattiasa/helm) in modern Python, managed with [uv](https://docs.astral.sh/uv/).
 
 ---
 
