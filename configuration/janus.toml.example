@@ -1,0 +1,22 @@
+server_port = 1717
+bind_address = "127.0.0.1"
+
+delay = 60        # seconds before a new triplet may retry
+rbl_delay = 3600  # seconds for RBL-listed senders
+gl_message = "Temporarily blocked for @SECONDS@ seconds."
+
+gc_days = 5
+gc_interval = 60
+
+# Select backend by URL scheme:
+#   sqlite+aiosqlite:///path/to/greylist.db   -- local dev/testing
+#   postgresql+asyncpg://user:pass@host/db    -- production
+#   mysql+aiomysql://user:pass@host/db        -- production
+db_url = "sqlite+aiosqlite:///greylist.db"
+
+control_socket = "/tmp/janus.sock"
+
+rbls = [
+    "bl.spamcop.net.",
+    "zen.spamhaus.org.",
+]
