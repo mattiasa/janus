@@ -4,6 +4,8 @@ A Postfix greylisting policy daemon. Janus defers mail from unknown senders and 
 
 Reimplementation of [Helm](https://github.com/mattiasa/helm) in modern Python, managed with [uv](https://docs.astral.sh/uv/).
 
+The name comes from the [Roman god Janus](https://en.wikipedia.org/wiki/Janus), patron of gateways, doorways, and passages. He is depicted with two faces — one looking forward, one back — watching over every threshold. A mail gateway that decides what passes through and what is turned away seemed a fitting domain for his guardianship.
+
 ---
 
 ## Requirements
