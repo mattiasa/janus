@@ -18,7 +18,7 @@ jobs:
       - run: uv sync --group test --extra sqlite
       - run: uv run pytest --cov --cov-report=xml
       - name: Post coverage comment
-        uses: MishaKav/pytest-coverage-comment@v1.10.0
+        uses: MishaKav/pytest-coverage-comment@v1
         if: github.event_name == 'pull_request'
         with:
           pytest-xml-coverage-path: coverage.xml
