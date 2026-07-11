@@ -2,3 +2,5 @@ greylist.db
 #*
 *~
 __pycache__
+.coverage
+htmlcov/
