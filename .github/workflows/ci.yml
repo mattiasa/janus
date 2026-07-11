@@ -11,14 +11,14 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v8
         with:
           python-version: "3.13"
       - run: uv sync --group test --extra sqlite
       - run: uv run pytest --cov --cov-report=xml
       - name: Post coverage comment
-        uses: MishaKav/pytest-coverage-comment@v1
+        uses: MishaKav/pytest-coverage-comment@v1.10.0
         if: github.event_name == 'pull_request'
         with:
           pytest-xml-coverage-path: coverage.xml
